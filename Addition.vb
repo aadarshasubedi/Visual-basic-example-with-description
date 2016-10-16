@@ -33,8 +33,8 @@ End Module
 
 'Line 9 and 12 are declarations,which begin with the keyword Dim.
 'The words firstNumber,secondNumber,number1,number2 and sumOfNumber
-'are the name of variables or locations in the computer's memory  
-'where memory can be stored for use by the program.The declaration in
+I'are the name of variables or locations in the computer's memory  
+n'where memory can be stored for use by the program.The declaration in
 'line 9 specifies that the variables firstNumber and secondNumber are
 'data of type string, which indicates that these variables store
 'string of characters. Line 12 indicates that variables store integer 
@@ -44,7 +44,7 @@ End Module
 'name are keywords.
 
 'A variable name can be a valid identifier. Variables of the same type
-'can be declared in seperate statements or they can be declared in one 
+I'can be declared in seperate statements or they can be declared in one 
 'The latter format uses a comma-separated list of variable names.
 
 'Line 15 prompts the user to enter the first integers that will be added
@@ -89,7 +89,27 @@ End Module
 'Basic performs the data-type conversions whenever necessary. In this case, the assignment of
 'a String value to an Integer variable(i.e, number1) invokes the conversion because Integer
 'variables can accept only integer values. The value obtained by converting the String value in
-'the line 23 is assigned to Integer variable number1.
+'the line 23 is assigned to Integer variable number1. In this program, any subsequent references 
+'to the value of number1 indicate this Integer value. Likewise,the Integer value obtained by
+'converting the String in the line 24 is assigned to the variable number2.The value of number2
+'refers to this Integer value in the ensuing discussion.The values stored in the firstNumber and
+'secondNumber remain Strings.
+
+'Alternatively, this implicit conversion, can be performed so as to eliminate the need for the 
+'String variables.For example,
+'      Dim number1 As Integer
+'      number1  = Console.ReadLine()
+'does not use the String variable (i.e, firstNumber). In this case, Visual Basic knows that the 
+'Console.ReadLine returns the string, and the program performs the necessary conversion.When the
+'String is both read and converted in the single line of code, the String variable (i.e firstNumber)
+'becomes unnecessary.
+
+'The Assignment statement on the line 26 calculates the sum of the Integer variables number1 and 
+'number2 and assigns the result to variable sumOfNumbers, using the assignment operator,=.The
+'statement is read as, "sumOfNumbers gets the value of number1+number2."Most calculations are performed 
+'in Assignment statements.
+
+'After the calculation is completed, line 29 displays the result of the addition
 '
 '
 '
@@ -98,3 +118,9 @@ End Module
 '
 '
 '
+'
+'
+'
+'
+'
+

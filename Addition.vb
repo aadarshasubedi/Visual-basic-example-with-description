@@ -1,15 +1,31 @@
+'Addition.vb
+'Addition program
+
 Module modAddition
 
     Sub Main()
-        Dim firstNumber, secondNumber As String 'Line 9
-        Dim number1, number2, sumOfNumbers As Integer 'Line 12
-        Console.WriteLine("Please Enter The First Integer") 'Line 15
+        
+        'Variables for storing the user input
+        Dim firstNumber, secondNumber As String 
+        
+        'Variables used in addition calculation
+        Dim number1, number2, sumOfNumbers As Integer
+        
+        'Read first number from the user
+        Console.WriteLine("Please Enter The First Integer")
+        
+        'Read second number from the user
         firstNumber = Console.ReadLine()
         Console.WriteLine("Please Enter The Second Integer")
         secondNumber = Console.ReadLine()
+        
+        'convert input values to the integers
         number1 = firstNumber
         number2 = secondNumber
-        sumOfNumbers = number1 + number2
+        
+        sumOfNumbers = number1 + number2 'Add numbers
+        
+        'Display results
         Console.WriteLine("The Sum is {0}", sumOfNumbers)
     End Sub
 
@@ -62,6 +78,22 @@ End Module
 'class." The assignment operator is called binary operator,because it has two operands
 'firstNumber and the value returned by Console.ReadLine.The entire statement is called
 'an assignment statement because it assigns the value to the variable.
+
+'Lines 19-20 prompt the user to enter a second integer and assign the input value to the
+'secondNumber.User input from the command window is sent to the console application as a
+'String. For example, if the user types the character 7 and 2 and then press Enter, the 
+'value returned by ReadLine is "72".To perform arithmetic operations using the input values,
+'the Strings first must be converted to the Integer.
+
+'Line 23-24 implicitly convert the two Strings typed by the user to the integer values.Visual
+'Basic performs the data-type conversions whenever necessary. In this case, the assignment of
+'a String value to an Integer variable(i.e, number1) invokes the conversion because Integer
+'variables can accept only integer values. The value obtained by converting the String value in
+'the line 23 is assigned to Integer variable number1.
+'
+'
+'
+'
 '
 '
 '
